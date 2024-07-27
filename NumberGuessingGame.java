@@ -44,6 +44,13 @@ public class NumberGuessingGame {
             System.out.print("Do you want to play another round? (yes/no): ");
             playAgain = scanner.next().equalsIgnoreCase("yes");
 
-        }while(playAgain)
+        }while(playAgain);
+
+        System.out.println("Game over!");
+        System.out.println("Total rounds played: " + totalRounds);
+        System.out.println("Total attempts: " + totalAttempts);
+        System.out.println("Average attempts per round: " + (totalAttempts / totalRounds));
+
+        scanner.close();
     }
 }
