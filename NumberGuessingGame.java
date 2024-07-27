@@ -17,6 +17,9 @@ public class NumberGuessingGame {
             int maxAttempts = 6; // Maximum attempts per round
             int attempts = 0;
             boolean guessedCorrectly = false;
+
+            System.out.println("Round " + totalRounds);
+            System.out.println("I have chosen a number between 1 and 100. Try to guess it!");
         }
     }
 }
