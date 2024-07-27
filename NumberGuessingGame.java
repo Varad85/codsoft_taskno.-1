@@ -26,6 +26,16 @@ public class NumberGuessingGame {
                 int userGuess = scanner.nextInt();
                 attempts++;
                 totalAttempts++;
+
+                if (userGuess == numberToGuess) {
+                    System.out.println("Congratulations! You guessed the number correctly in " + attempts + " attempts.");
+                    guessedCorrectly = true;
+                    break;
+                } else if (userGuess > numberToGuess) {
+                    System.out.println("Too high! Try again.");
+                } else {
+                    System.out.println("Too low! Try again.");
+                }
             }
 
         }
