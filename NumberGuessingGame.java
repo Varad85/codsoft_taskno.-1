@@ -37,7 +37,13 @@ public class NumberGuessingGame {
                     System.out.println("Too low! Try again.");
                 }
             }
+            if (!guessedCorrectly) {
+                System.out.println("Sorry! You've used all " + maxAttempts + " attempts. The number was " + numberToGuess);
+            }
 
-        }
+            System.out.print("Do you want to play another round? (yes/no): ");
+            playAgain = scanner.next().equalsIgnoreCase("yes");
+
+        }while(playAgain)
     }
 }
