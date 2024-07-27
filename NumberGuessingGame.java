@@ -10,5 +10,13 @@ public class NumberGuessingGame {
         boolean playAgain;
         int totalRounds = 0;
         int totalAttempts = 0;
+
+        do {
+            totalRounds++;
+            int numberToGuess = random.nextInt(100) + 1; // Random number between 1 and 100
+            int maxAttempts = 6; // Maximum attempts per round
+            int attempts = 0;
+            boolean guessedCorrectly = false;
+        }
     }
 }
