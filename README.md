@@ -1,4 +1,4 @@
-# codsoft_taskno.-1
+# codsoft_taskno.1
 Number Game
 
 Following are the objectives achieved by completing this project.
